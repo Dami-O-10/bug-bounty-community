@@ -46,10 +46,11 @@
 </html>
 
 <h2>🐞 Submit a Bug Report</h2>
-<form action="https://formsubmit.co/dami.ogunrinde421@gmail.com" method="POST" class="bug-form">
-  <input type="text" name="bugTitle" placeholder="Bug Title" required />
-  <textarea name="description" placeholder="Describe the bug..." required></textarea>
-  <input type="text" name="reporter" placeholder="Your Name or Username" />
-  <button type="submit">🚀 Submit Bug</button>
+<form <form onsubmit="submitBug(event)">
+  <input type="text" id="bugTitle" placeholder="Bug Title" required />
+  <textarea id="bugDesc" placeholder="Describe the bug" required></textarea>
+  <input type="text" id="reporter" placeholder="Your Name or Username" />
+  <button type="submit">Submit Bug</button>
 </form>
+
 
