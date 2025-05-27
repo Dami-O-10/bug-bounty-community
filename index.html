@@ -23,3 +23,25 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<section>
+  <h2>🕷️ Recent Bug Reports</h2>
+  <div id="bugFeed"></div>
+</section>
+
+<script>
+  const bugs = [
+    { title: "XSS in comment box", reporter: "Alice" },
+    { title: "SQL Injection on login", reporter: "Bob" },
+    { title: "CSRF in password reset", reporter: "Charlie" },
+  ];
+
+  const bugFeed = document.getElementById("bugFeed");
+
+  bugs.forEach(bug => {
+    const card = document.createElement("div");
+    card.className = "bug-card";
+    card.innerHTML = `<h3>${bug.title}</h3><p>Reported by ${bug.reporter}</p>`;
+    bugFeed.appendChild(card);
+  });
+</script>
