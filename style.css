@@ -100,3 +100,12 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.bug-card {
+  background: #1e1e1e;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #00ffc8;
+  border-radius: 8px;
+}
+
+
