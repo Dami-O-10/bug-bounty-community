@@ -1,1 +1,18 @@
+<h2>Top Bug Hunters</h2>
+<ul id="leaderboard"></ul>
 
+<script>
+  const leaderboardData = [
+    { name: "Alice", bugs: 23 },
+    { name: "Bob", bugs: 18 },
+    { name: "Charlie", bugs: 15 },
+  ];
+
+  const container = document.getElementById("leaderboard");
+
+  leaderboardData.forEach(user => {
+    const li = document.createElement("li");
+    li.innerHTML = `🐞 <strong>${user.name}</strong> — ${user.bugs} bugs`;
+    container.appendChild(li);
+  });
+</script>
