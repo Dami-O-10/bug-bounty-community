@@ -47,7 +47,27 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  // Your Firebase config — REPLACE with your own values from Firebase Console
+ // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAZ9vwK3VJbtiUgZWJe5aqpWIVsSgmFmjs",
+  authDomain: "bug-bounty-community.firebaseapp.com",
+  projectId: "bug-bounty-community",
+  storageBucket: "bug-bounty-community.firebasestorage.app",
+  messagingSenderId: "452520811509",
+  appId: "1:452520811509:web:0f266fc021de0500a99ebc",
+  measurementId: "G-WPWVBKE32X"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
   const firebaseConfig = {
     apiKey: "YOUR_API_KEY",
     authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
