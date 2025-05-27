@@ -86,3 +86,17 @@ nav {
 header h1 {
   animation: slideDown 0.6s ease forwards;
 }
+
+#leaderboard {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#leaderboard li {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
